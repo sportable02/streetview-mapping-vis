@@ -20,7 +20,7 @@ const MapCountry = (Props) => {
         <GeoJSON
           data={countryGeom}
           style={{
-            fillColor: countryData.isDriving ? "#00FF00" : "#FF0000",
+            fillColor: countryData.isDriving ? "#00EE00" : "#FF0000",
             opacity: isSelected ? 1 : 0,
             fillOpacity: 0.4,
           }}

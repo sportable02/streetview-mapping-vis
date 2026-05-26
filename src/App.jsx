@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-// import Nodes from "./Nodes";
 import { MapContainer, TileLayer } from "react-leaflet";
 import MapCountries from "./MapCountries";
 import { getStreetView } from "./api";
@@ -7,7 +6,6 @@ import { parseCountryData, /*parseRegionData*/ } from "./utils";
 
 const App = () => {
   const {
-    //status,
     error,
     data: streetviewData,
   } = useQuery({
@@ -19,9 +17,6 @@ const App = () => {
 
   return (
     <div id="app" >
-      {/* <div id="stati">
-        <Status val={mapStatus} />
-      </div> */}
       <h1 id="title">Google Street View - Current Mapping</h1>
       <MapContainer
         preferCanvas={true}
@@ -37,7 +32,6 @@ const App = () => {
         <MapCountries
           data={parseCountryData(streetviewData)}
         />
-        {/* {streetviewData && <Nodes regions={parseRegionData(streetviewData)} />} */}
       </MapContainer>
     </div>
   );

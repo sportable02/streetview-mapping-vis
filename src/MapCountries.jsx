@@ -2,7 +2,6 @@ import MapCountry from "./MapCountry";
 import { useMemo } from "react";
 
 const MapCountries = (Props) => {
-  //const [overpassStatus, setOverpassStatus] = useState();
   const { data } = Props;
   const countriesArr = useMemo(() => {
     return data;

@@ -26,10 +26,6 @@ export function parseCountryData(data) {
   }
 
   return Array.from(dataMap.values());
-
-  //   return Array.from(dataMap.values()).sort((a, b) =>
-  //     a.countryName.localeCompare(b.countryName)
-  //   );
 }
 
 export function parseRegionData(data) {

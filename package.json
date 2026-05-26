@@ -10,12 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@derhuerst/query-overpass": "^2.0.1",
     "@tanstack/react-query": "^5.90.16",
     "express": "^5.2.1",
     "leaflet": "^1.9.4",
     "node-fetch": "^3.3.2",
-    "osmtogeojson": "^3.0.0-beta.5",
     "react": "^19.0.0-rc.1",
     "react-dom": "^19.0.0-rc.1",
     "react-leaflet": "^5.0.0-rc.2"
